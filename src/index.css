@@ -1,13 +1,114 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* === General styles ===
+============================================================================= */
+#root {
+  background-color: hsl(0, 0%, 17%);
+  color: hsl(0, 0%, 90%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 40px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* === Header ===
+============================================================================= */
+.app-header {
+  text-align: center;
+  margin: 20px 0;
+}
+.app-header h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+.app-header p {
+  font-size: 18px;
+}
+
+/* === Main ===
+============================================================================= */
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.app-controls input {
+  width: 180px;
+  padding: 10px;
+  margin: 0 10px 10px 10px;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 10%);
+  color: hsl(0, 0%, 90%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.app-controls button {
+  width: 180px;
+  font-size: 14px;
+  padding: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(0, 0%, 10%);
+  color: hsl(0, 0%, 90%);
+  margin: 0 10px 10px 10px;
+  border: 1px solid hsla(0, 0%, 0%, 0);
+}
+.app-controls button:hover {
+  border: 1px solid hsla(0, 0%, 90%, 1);
+}
+
+.app-controls button.selected {
+  background-color: hsl(225, 42%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+
+.app-results {
+  width: 100%;
+}
+
+/* === Footer ===
+============================================================================= */
+.app-footer {
+  margin: 10px;
+  text-align: center;
+}
+.app-footer a {
+  color: hsl(225, 50%, 60%);
+}
+
+/* === Name List ===
+============================================================================= */
+.list-item {
+  display: grid;
+  grid-template-columns: 100px 1fr 50px;
+  column-gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+}
+.list-name {
+  text-align: right;
+}
+.list-number {
+  text-align: left;
+}
+.bar-max {
+  width: 100%;
+  min-height: 20px;
+  background-color: hsl(0, 0%, 10%);
+  border-radius: 5px;
+}
+.bar-value {
+  min-height: 20px;
+  background-color: hsl(225, 42%, 52%);
+  border-radius: 5px;
 }

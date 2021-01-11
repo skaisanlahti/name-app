@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/skaisanlahti/name-app">
+    <h3 align="center">Name Application</h3>
+  </a>
 
-## Available Scripts
+  <p align="center">
+    Application for displaying a list of names and their popularity.
+    <br />
+    <a href="https://github.com/skaisanlahti/name-app"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://skaisanlahti.github.io/name-app/">View Demo</a>
+    ·
+    <a href="https://github.com/skaisanlahti/name-app/issues">Report a Bug</a>
+  </p>
+</p>
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
 
-### `yarn start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- ABOUT THE PROJECT -->
 
-### `yarn test`
+## About The Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![Product Name Screen Shot][product-screenshot]](https://skaisanlahti.github.io/name-app/)
 
-### `yarn build`
+This is a small single-page front-end application that displays a list of names and their popularity with additional sorting and filtering options. The project was made with create-react-app. The name data was provided in a json file, but the application could easily be extended to get the data from an API by adding a fetch function.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The search input automatically filters the displayed name list based on the characters searched and included in the found names while retaining the sort mode. Sort mode can be changed on the fly regardless of the filtering. To return to the full list, simply leave the search blank again.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Each name is accompanied by a simple bar graph to illustrate the popularity against the most popular name on the full list and does not update with filter changes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built With
 
-### `yarn eject`
+- [ReactJS](https://reactjs.org/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- GETTING STARTED -->
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To get a local copy up and running follow these simple steps.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+- npm
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+npm install npm@latest -g
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation
 
-### Code Splitting
+1. Clone the name-app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+git clone https://github.com/skaisanlahti/name-app.git
+```
 
-### Analyzing the Bundle Size
+2. Install NPM packages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```sh
+npm install
+```
 
-### Making a Progressive Web App
+3. Run local development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```sh
+npm start
+```
 
-### Advanced Configuration
+<!-- USAGE EXAMPLES -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- ROADMAP -->
 
-### Deployment
+<!-- CONTRIBUTING -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- LICENSE -->
 
-### `yarn build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Sami Kaisanlahti - skaisanlahti@gmail.com
+
+Project Link: [https://github.com/skaisanlahti/name-app](https://github.com/skaisanlahti/name-app)
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgements
+
+- [Solita Dev Academy 2021](https://github.com/solita/dev-academy-2021)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/skaisanlahti/name-app.svg?style=flat-square
+[contributors-url]: https://github.com/skaisanlahti/name-app/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/skaisanlahti/name-app.svg?style=flat-square
+[forks-url]: https://github.com/skaisanlahti/name-app/network/members
+[stars-shield]: https://img.shields.io/github/stars/skaisanlahti/name-app.svg?style=flat-square
+[stars-url]: https://github.com/skaisanlahti/name-app/stargazers
+[issues-shield]: https://img.shields.io/github/issues/skaisanlahti/name-app.svg?style=flat-square
+[issues-url]: https://github.com/skaisanlahti/name-app/issues
+[license-shield]: https://img.shields.io/github/license/skaisanlahti/name-app.svg?style=flat-square
+[license-url]: https://github.com/skaisanlahti/name-app/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/sami-kaisanlahti-6587031a6/
+[product-screenshot]: images/screenshot.png
